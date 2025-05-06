@@ -4,7 +4,7 @@ Instruction to run yolov8 & yolov11 docker container on jetpack 6
 ## Quick Start
 
 1. Clone JetsonHacks github repo to easily install docker:
-   ```
+   ```bash
    git clone https://github.com/jetsonhacks/install-docker.git
 
 2. go to install-docker directory:
