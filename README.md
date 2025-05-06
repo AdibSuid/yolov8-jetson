@@ -1,5 +1,5 @@
 # yolov8-jetson
-Instruction to run yolov8 docker container on jetpack 6
+Instruction to run yolov8 & yolov11 docker container on jetpack 6
 
 ## Quick Start (Docker Container)
 
@@ -17,13 +17,12 @@ Instruction to run yolov8 docker container on jetpack 6
 
 7. Pull ultralytics docker container:
    ```bash
-   t=ultralytics/ultralytics:latest-jetson-jetpack6
-   sudo docker pull $t && sudo docker run -it --ipc=host --runtime=nvidia $t
+   sudo docker pull kambing74/yolov8-jetson:latest && sudo docker run -it --gpus all --ipc=host --runtime=nvidia --privileged kambing74/yolov8-jetson:latest
 
-8. Convert model to TensorRT & run inference
+8. Go to ARBA workspace directory
    ```bash
-   # Export a YOLOv8n PyTorch model to TensorRT format
-   yolo export model=yolov8n.pt format=engine  # creates 'yolov8n.engine'
+   cd /ultralytics/simedarby_ws/src/weights
 
-   # Run inference with the exported model
-   yolo predict model=yolov8n.engine source='https://ultralytics.com/images/bus.jpg'
+9. Run inference (without gui)
+   ```bash
+   yolo predict model=MeRBA-1n.pt source=0 show=False
