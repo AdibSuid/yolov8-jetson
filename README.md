@@ -42,17 +42,17 @@ Instruction to run yolov8 & yolov11 docker container on jetpack 6
    xhost +local:docker
 
 10.Pull ultralytics docker image:
-   ```bash
-   sudo docker pull kambing74/yolov8-jetson:latest
+    ```bash
+    sudo docker pull kambing74/yolov8-jetson:latest
 
 11.Run the docker container:
-   ```bash
-   sudo docker run -it --gpus all --ipc=host --runtime=nvidia --privileged -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix kambing74/yolov8-jetson:latest
+    ```bash
+    sudo docker run -it --gpus all --ipc=host --runtime=nvidia --privileged -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix kambing74/yolov8-jetson:latest
 
 12.Once you are inside the docker container, go to ARBA workspace directory
-   ```bash
-   cd /ultralytics/simedarby_ws/src/merba/src
+    ```bash
+    cd /ultralytics/simedarby_ws/src/merba/src
 
 13. Run python script to test the realtime video detection: 
    ```bash
-   python3 test.py
+    python3 test.py
