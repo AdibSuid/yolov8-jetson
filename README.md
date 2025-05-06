@@ -21,7 +21,7 @@ Instruction to run yolov8 & yolov11 docker container on jetpack 6
 
    xhost +local:docker
 
-7. Pull ultralytics docker container:
+7. Pull ultralytics docker image:
    ```bash
    sudo docker pull kambing74/yolov8-jetson:latest
 
