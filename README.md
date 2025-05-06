@@ -15,7 +15,7 @@ Instruction to run yolov8 & yolov11 docker container on jetpack 6
    ```bash
    bash install.sh
 
-3. Install x11 xserver on host machine:
+3. Run thee two commands to install x11 xserver on host machine:
    ```bash
    sudo apt-get install x11-xserver-utils
 
