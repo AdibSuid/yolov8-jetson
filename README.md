@@ -1,5 +1,5 @@
 # yolov8-jetson
-Instruction to run yolov8 & yolov11 docker container on jetpack 6
+Run yolov8 & yolov11 docker container on jetpack 6
 
 ## Quick Start
 
