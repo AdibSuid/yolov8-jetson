@@ -19,7 +19,7 @@ Instruction to run yolov8 & yolov11 docker container on jetpack 6
    ```bash
    bash ./configure_nvidia_docker.sh
 
-5. Reboot jetson device:
+5. Reboot jetson device for the changes to take effect:
    ```bash
    sudo reboot
 
