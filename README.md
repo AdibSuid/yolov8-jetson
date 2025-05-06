@@ -41,7 +41,7 @@ Instruction to run yolov8 & yolov11 docker container on jetpack 6
 
    xhost +local:docker
 
-10. Pull ultralytics docker image:
+10.Pull ultralytics docker image:
    ```bash
    sudo docker pull kambing74/yolov8-jetson:latest
    ```
@@ -56,6 +56,6 @@ Instruction to run yolov8 & yolov11 docker container on jetpack 6
    cd /ultralytics/simedarby_ws/src/merba/src
    ```
 
-13. Run python script to test the realtime video detection: 
+13.Run python script to test the realtime video detection: 
    ```bash
     python3 test.py
