@@ -57,10 +57,10 @@ ARBA oil palm tree detection weights (yolo v8)
     ```bash
     sudo docker pull kambing74/yolov8-jetson:latest
 
-If the jetson board host running jetpack 6, run this command instead :
-    ```
-    sudo docker pull kambing74/yolov8-jetson:jetpack5
-    ```
+If the Jetson board host is running JetPack 6, run this command instead:  
+```bash
+sudo docker pull kambing74/yolov8-jetson:jetpack5
+
 
 11. Run the docker container (for jetpack 5):
     ```bash
