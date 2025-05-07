@@ -1,5 +1,5 @@
 # yolov8-jetson
-Run yolov8 & yolov11 docker container on jetpack 6
+Run yolov8 & yolov11 docker container on jetpack5 & jetpack 6
 
 ## Quick Start
 
@@ -41,12 +41,20 @@ Run yolov8 & yolov11 docker container on jetpack 6
 
    xhost +local:docker
 
-10. Pull ultralytics docker image:
+10. Pull ultralytics docker image(if the jetson board host running jetpack 5, run this command):
     ```bash
     sudo docker pull kambing74/yolov8-jetson:latest
+
+If the jetson board host running jetpack 6, run this command:
+    ```bash
+    sudo docker pull kambing74/yolov8-jetson:jetpack6
     ```
 
-11. Run the docker container:
+11. Run the docker container (for jetpack 5):
+    ```bash
+    sudo docker run -it --gpus all --ipc=host --runtime=nvidia --privileged -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix kambing74/yolov8-jetson:jetpack5
+    ```
+If the jetson board running jetpack 6, run this command:
     ```bash
     sudo docker run -it --gpus all --ipc=host --runtime=nvidia --privileged -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix kambing74/yolov8-jetson:latest
     ```
