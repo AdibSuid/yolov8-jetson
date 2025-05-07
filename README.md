@@ -58,15 +58,15 @@ ARBA oil palm tree detection weights (yolo v8)
     sudo docker pull kambing74/yolov8-jetson:latest
 
 If the Jetson board host is running JetPack 6, run this command instead:  
-```bash
-sudo docker pull kambing74/yolov8-jetson:jetpack5
-
+   ```bash
+   sudo docker pull kambing74/yolov8-jetson:jetpack5
+   ```
 
 11. Run the docker container (for jetpack 5):
     ```bash
     sudo docker run -it --gpus all --ipc=host --runtime=nvidia --privileged -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix kambing74/yolov8-jetson:jetpack5
     ```
-If the jetson board host running jetpack 6, run this command instead:
+If the jetson board host running jetpack 6, run this command instead:  
     ```
     sudo docker run -it --gpus all --ipc=host --runtime=nvidia --privileged -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix kambing74/yolov8-jetson:latest
     ```
