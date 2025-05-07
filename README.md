@@ -5,8 +5,9 @@ For Jetpack 5, the docker container consist of:
 ultralytics yolov8n,
 ultralytics yolov11n,
 ROS Noetic(Bare Bones),
-rosserial_arduino library,
+rosserial_arduino library (built),
 ROS Foxy(Bare Bones),
+microros_agent library (built),
 ARBA oil palm tree detection weights (yolo v8)
 
 For Jetpack 6, the docker container consist of:
