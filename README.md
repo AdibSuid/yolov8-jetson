@@ -57,11 +57,11 @@ ARBA oil palm tree detection weights (yolo v8)
 
 10. Pull ultralytics docker image(if the jetson board host running jetpack 5, run this command):
     ```bash
-    sudo docker pull kambing74/yolov8-jetson:latest
+    sudo docker pull kambing74/yolov8-jetson:jetpack5
 
 If the Jetson board host is running JetPack 6, run this command instead:    
    ```
-   sudo docker pull kambing74/yolov8-jetson:jetpack5
+   sudo docker pull kambing74/yolov8-jetson:jetpack6
    ```
 
 11. Run the docker container (for jetpack 5):
@@ -70,7 +70,7 @@ If the Jetson board host is running JetPack 6, run this command instead:
     ```
 If the jetson board host running jetpack 6, run this command instead:    
    ```
-   sudo docker run -it --gpus all --ipc=host --runtime=nvidia --privileged -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix kambing74/yolov8-jetson:latest
+   sudo docker run -it --gpus all --ipc=host --runtime=nvidia --privileged -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix kambing74/yolov8-jetson:jetpack6
    ```
 
 12. Once you are inside the docker container, go to ARBA workspace directory:
