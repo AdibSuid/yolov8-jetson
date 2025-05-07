@@ -1,6 +1,18 @@
 # yolov8-jetson
 Run yolov8 & yolov11 docker container on jetpack5 & jetpack 6
 
+For Jetpack 5, the docker container consist of:
+ultralytics yolov8n
+ultralytics yolov11n
+ROS Noetic(Bare Bones)
+ROS Foxy(Bare Bones)
+ARBA oil palm tree detection weights (yolo v8)
+
+For Jetpack 6, the docker container consist of:
+ultralytics yolov8n
+ultralytics yolov11n
+ARBA weights (yolo v8)
+
 ## Quick Start
 
 1. Clone JetsonHacks github repo to easily install docker:
